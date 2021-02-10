@@ -36,11 +36,11 @@ const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
             + 'FN:chikku Admin\n' 
-            + 'ORG: chikku CBot;\n' 
+            + 'ORG: chikku Bot;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=917356145338:+91 7356145338\n' 
             + 'END:VCARD' 
 blocked = []   
-prefix = '+'
+prefix = '.'
 limitawal = 30
 memberlimit = 12
 cr = '*CHIKKU*'
