@@ -7,7 +7,7 @@
 ## Clone this project
 
 ```bash
-> git clone https://github.com/affisjunianto/botwasapv4
+> git clone https://github.com/TECho-eng/botwasapv4
 ```
 
 ## Install the dependencies:
@@ -123,14 +123,5 @@ you've just cloned!!
 |       ✅        |   Broadcast                |
 
 ## Special Thanks to
-* [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
-* [`Mhankbarbar`](https://github.com/MhankBarBar)
-* [`Fadhil Graphy`](https://github.com/MrK4ZUT0)
-
-
 ## whatsapp number
-* [`WhatsApp`](wa.me/6282334297175)
-### Donate
-* [`Saweria`](https://saweria.co/ampibibot)
-* [`Dana : +62895710073737`]
-* [`Pulsa : +6282334297175`]
+* [`WhatsApp`](wa.me/917356145338)
