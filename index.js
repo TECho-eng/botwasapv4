@@ -35,19 +35,19 @@ const { ind } = require('./language')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Affis Admin\n' 
-            + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
+            + 'FN:chikku Admin\n' 
+            + 'ORG: chikku CBot;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=917356145338:+91 7356145338\n' 
             + 'END:VCARD' 
 blocked = []   
-prefix = '#'
+prefix = '+'
 limitawal = 30
-memberlimit = 5
-cr = '*BOT INI SUDAH TERVERIFIKASI*'
+memberlimit = 12
+cr = '*CHIKKU*'
 /*************************************/
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["62895710073737@s.whatsapp.net","6282334297175@s.whatsapp.net"] 
+const ownerNumber = ["917356145338@s.whatsapp.net","917356145338@s.whatsapp.net"] 
 /************************************/
 
        
@@ -278,7 +278,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `akhirnya beban group berkurang 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
+				teks = `finally the group load is reduced 𝟭,bye bye🥳 @${num.split('@')[0]} jasamu akan di kubur dalam²`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
