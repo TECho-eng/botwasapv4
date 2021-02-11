@@ -117,13 +117,13 @@ exports . reglevelahf  =  ( command ,  pushname ,  getLevelingLevel ,  sender , 
 exports . menu  =  ( pushname ,  prefix ,  getLevelingLevel ,  getLevelingXp ,  sender ,  reqXp ,  _registered ,  my money ,  role )  =>  { 
 	return  `
 ┏━━━⊱  *ABOUT USER*  ⊰━━┓
-┣⊱ *Nama* : ${pushname}
-┣⊱ *Nomer* : wa.me/${sender.split("@")[0]}
+┣⊱ *Name* : ${pushname}
+┣⊱ *Number* : wa.me/${sender.split("@")[0]}
 ┣⊱ *Uang mu* : Rp${uangku}
 ┣⊱ *XP* : ${getLevelingXp(sender)}/${reqXp} 
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
 ┣⊱ *User register* : ${_registered.length}
-┗━━━⊱  ⸨ *AFFIS* ⸩  ⊰━━━━┛
+┗━━━⊱  ⸨ *CHIKKU* ⸩  ⊰━━━━┛
 
  *${prefix}info*
  *${prefix}donasi*
@@ -213,46 +213,37 @@ exports . menu  =  ( pushname ,  prefix ,  getLevelingLevel ,  getLevelingXp ,  
 ┣⊱ *${prefix}event* [1/0]
 ┣⊱ *${prefix}clone* <tag>
 ┣⊱ *${prefix}setppbot*
-┣━━⊱ *THANGKS TO* ⊰━━┫
-┃
-┣⊱ *AFFIS JUNIANTO* <dev>
-┣⊱ *FADHIL GRAPHY* <partner>
-┣⊱ *MHANKBARBARS* <sc ori>
-┣⊱ *MYBOT TEAM* <team>
-┃
-┣⊱ NOTE : TQTO DI HAPUS
-┃ GW GAK UP LAGI OKE
-┃
-┗━━⊱  ⸨ *X-BOT* ⸩  ⊰━━━━┛
+┣🦅🦅🦅🦅🦅🦅🦅🦅🦅🦅🦅🦅
+┗━━⊱  ⸨ *CHIKKU* ⸩  ⊰━━━━┛
 `
 }
 
-exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, role) => {
-	return`
-*「 SELAMAT 」*
-┏⊱ *Nama* : ${pushname}
-┣⊱ *Nomer* : wa.me/${sender.split("@")[0]}
-┣⊱ *Xp* : ${getLevelingXp(sender)}
-┣⊱ *Limit* : +3
-┗⊱ *Level* : ${getLevel} ⊱ ${getLevelingLevel(sender)}
+exports.levelup = (pushname, sender, getLevelingXp, getLevel, getLevelingLevel, role) => {
+return`
+* 「HAPPY」 *
+┏⊱ * Name *: $ {pushname}
+┣⊱ * Number *: wa.me/$(sender.split("@")[0]}
+┣⊱ * Xp *: $ {getLevelingXp (sender)}
+┣⊱ * Limit *: +3
+┗⊱ * Level *: $ {getLevel} ⊱ $ {getLevelingLevel (sender)}
 `}
  
 exports.limitend = (pushname) => {
-	return`*maaf ${pushname} limit hari ini habis*\n*beli limit untuk mendapatkan limit/ naik level*`
+return` * sorry $ {pushname} limit today expired * \ n * buy limit to get limit / level up * `
 }
 
 exports.limitcount = (limitCounts) => {
-	return`
-*「 LIMIT COUNT 」*
-sisa limit anda : ${limitCounts}
+return`
+* 「LIMIT COUNT」 *
+your remaining limit: $ {limitCounts}
 
-NOTE : untuk mendapatkan limit. bisa lewat naik level atau buylimit`
+NOTE: to get the limit. can pass level up or buylimit`
 }
 
 exports.satukos = () => {
-	return`*Tambah parameter 1/enable atau 0/disable`
+return` * Add parameter 1 / enable or 0 / disable`
 }
 
-exports.uangkau = (pushname, sender, uangkau) => {
-	return`*┏⊱ 「 ATM 」⊰━┓*\n┣⊱ *Nama* : ${pushname}\n┣⊱ *Nomer* : ${sender.split("@")[0]}\n┣⊱ *Uang* : ${uangkau}\n┗━━━━━━━━━━`
+exports.uapai = (pushname, sender, uapai) => (
+return` * ┏⊱ 「ATM」 ⊰━┓ * \ n┣⊱ * Name *: $ {pushname} \ n┣⊱ * Number *: $ {sender.split ("@") [0]} \ n┣⊱ * Money *: $ {uapai} \ n┗━━━━━━━━━━`
 }
